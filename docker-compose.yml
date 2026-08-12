@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: storerate-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: storerate
+      POSTGRES_USER: storerate
+      POSTGRES_PASSWORD: storerate_dev
+    ports:
+      - "5434:5432"
+    volumes:
+      - ./docker-data/postgres:/var/lib/postgresql/data
