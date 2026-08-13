@@ -13,9 +13,35 @@ The application provides three different roles:
 - **STORE_OWNER** — views store information, ratings, and average ratings.
 
 Authentication is implemented using JWT, with role-based route protection and server-side validation.
-
 ---
 
+## Screenshots
+
+### User Dashboard
+
+Users can search stores, view overall ratings, see their own ratings, and submit or update ratings using the 1–5 star interface.
+
+![User Dashboard](docs/screenshots/user-dashboard.png)
+
+### Store Owner Dashboard
+
+Store owners can view their store information, average rating, total ratings, and customer rating details.
+
+![Store Owner Dashboard](docs/screenshots/owner-dashboard.png)
+
+### Admin Dashboard
+
+Administrators can manage users and stores, view platform statistics, search and filter records, and manage different user roles.
+
+![Admin Dashboard](docs/screenshots/admin-dashboard.png)
+
+### Change Password
+
+Users and store owners can securely change their account password through the application interface.
+
+![Change Password](docs/screenshots/change-password.png)
+
+---
 ## Features
 
 ### Admin
