@@ -153,31 +153,31 @@ Users and store owners can securely change their account password through the ap
 
 ```text
                     ┌─────────────────────┐
-                    │       Browser       │
-                    │    React + Vite     │
+                    │       Browser          │
+                    │    React + Vite        │
                     └──────────┬──────────┘
                                │
                                │ HTTP / JSON
                                ▼
                     ┌─────────────────────┐
-                    │     NestJS API      │
-                    │                     │
-                    │ Authentication      │
-                    │ Authorization       │
-                    │ Admin Module        │
-                    │ Users Module        │
-                    │ Owner Module        │
-                    │ Rating APIs         │
+                    │     NestJS API         │
+                    │                        │
+                    │ Authentication         │
+                    │ Authorization          │
+                    │ Admin Module           │
+                    │ Users Module           │
+                    │ Owner Module           │
+                    │ Rating APIs            │
                     └──────────┬──────────┘
-                               │
-                               │ Prisma ORM
-                               ▼
+                                 │
+                                 │ Prisma ORM
+                                 ▼
                     ┌─────────────────────┐
-                    │     PostgreSQL      │
-                    │                     │
-                    │ Users               │
-                    │ Stores              │
-                    │ Ratings             │
+                    │     PostgreSQL         │
+                    │                        │
+                    │ Users                  │
+                    │ Stores                 │
+                    │ Ratings                │
                     └─────────────────────┘
 ```
 
@@ -483,7 +483,7 @@ A user's rating for a store can be updated instead of creating multiple ratings 
              ▼              ▼              ▼
         Admin Dashboard  User Dashboard  Owner Dashboard
              │              │              │
-       ┌─────┼─────┐        │        ┌─────┴─────┐
+       ┌─────┼─────┐        │                 ┌─────┴─────┐
        │     │     │        │        │           │
      Users Stores Stats   Ratings   Stores    Ratings
        │     │              │
