@@ -76,3 +76,7 @@ coverage/
 
 *.tmp
 *.temp
+# Local AI / IDE tooling
+backend/.agents/
+backend/.claude/
+backend/.windsurf/
