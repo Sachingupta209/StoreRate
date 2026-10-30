@@ -6,7 +6,7 @@ A full-stack store rating platform where users can discover stores, submit ratin
 
 StoreRate is a role-based web application built with a NestJS backend, React frontend, and PostgreSQL database.
 
-The application provides three different roles:
+The application provides three different roles :
 
 - **ADMIN** — manages users, stores, and platform statistics.
 - **USER** — searches stores and submits or updates ratings.
