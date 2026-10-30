@@ -73,9 +73,13 @@ export class UsersService {
       };
     });
 
+    // The public query parameter is "rating"; the response field is "overallRating".
+    const sortField =
+      sortBy === 'rating' ? 'overallRating' : sortBy;
+
     result.sort((a, b) => {
-      const fieldA = a[sortBy];
-      const fieldB = b[sortBy];
+      const fieldA = a[sortField];
+      const fieldB = b[sortField];
 
       if (typeof fieldA === 'number' && typeof fieldB === 'number') {
         return sortOrder === 'asc'
